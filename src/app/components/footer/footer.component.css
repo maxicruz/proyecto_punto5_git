@@ -1,0 +1,271 @@
+/*Fondo de pagina */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #ecf0f1;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+/*Fuente Titulo*/
+p {
+  color: #524c56;
+  font-size: 160%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #524c56;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+a {
+  color: #524c56;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #c3d7df;
+}
+
+/*Aqui esta logo*/
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#banner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 3% 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+header #logo img{
+  margin: 20px;
+  float: left;
+  width: 100px;
+}
+
+/*Barra de navegaciÃ³n - Botones*/
+nav {
+  float: right;
+  padding: 25px 20px 0px 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 150%;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: #6991AC;
+}
+
+.current {
+  color: #3F5767;
+}
+
+a:hover {
+  color: #a9c3d4;
+}
+
+.one-third {
+  width: 31.5%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+/* SLIDER */
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  
+  animation: cambio 20s infinite alternate linear;
+  animation-timing-function: ease;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img{
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+
+  75% { margin-left: -200%; }
+  100% { margin-left: -200%; }
+}
+
+/* SECTION de Portafolio*/
+.left-col {
+  float: left;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  padding: 1%;
+}
+
+.logo2 {
+  float: right;
+  margin: 0 auto;
+  width: 32%;
+  height: auto;
+  padding: 1%;
+}
+
+/* Servicios*/
+.one-third-padding {
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+}
+
+.clearfix-padding {
+  clear: both;
+  padding: 0%;
+}
+
+/* FOOTER - ConfiguraciÃ³n del Pie de PÃ¡gina*/
+footer {
+  background: #2c3e50;
+  width: 100%;
+  overflow: auto;
+}
+
+/*Section de slider*/
+.servicios{
+  background: #BDBDBD;
+  float: left;
+  margin-top:0px;
+  margin-block-end: 0px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.serv{
+  width: 23.4%;
+  float: left;
+  background: rgb(243, 240, 240);
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.serv h2{
+  margin: 10px 0px;
+}
+
+.serv p{
+  padding: 10px;
+  font-size: 18px;
+}
+
+.serv button{
+  margin: 15px 0px;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* SECTION DE REGISTRO */
+form{
+  width: 40%;
+  background: #BDBDBD;
+  border: 2px solid black; 
+  margin-top: 10px;
+  margin-block-end: 2%;
+  border-radius: 15px;
+}
+
+select#mes{
+	width: 100%;
+}
+select#pais{
+	width: 100%;
+}
+select{
+	padding: 7px;
+}
+
+table td{
+	padding: 7px;
+}
+
+input{
+	padding: 7px;
+}
+
+#sbmEnviar{
+  width: 30%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-block-end: 3%;
+}
+
+#sbmCancelar{
+  width: 30%;
+	cursor: pointer;
+  border-radius: 5px;
+  margin-block-end: 3%;
+}
+
+#sbmEnviar:hover{
+  background: linear-gradient(to bottom, blue, white);
+}
+
+#sbmCancelar:hover{
+  background: linear-gradient(to bottom, red, white);
+}
